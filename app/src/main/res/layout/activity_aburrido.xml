@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AburridoActivity">
+
+    <TextView
+        android:id="@+id/emocion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7ea5c9"
+        android:padding="10dp"
+        android:text="Me siento aburrido"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/emocion"
+        android:layout_alignTop="@id/emocion"
+        android:layout_alignBottom="@id/emocion"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:src="@drawable/aburrido"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/raiaburrido"
+        android:layout_below="@id/emocion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="30dp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>

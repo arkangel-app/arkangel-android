@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.login">
+
+    <ImageView
+        android:id="@+id/timido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:background="#1fc768"
+        android:padding="15dp"
+        android:text="Ingresa tus datos"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="12"
+        android:inputType="textEmailAddress"
+        android:hint="Ingresa tu correo"
+        android:drawableStart="@drawable/correo"
+        android:drawablePadding="15dp"/>
+
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:hint="Ingresa tu clave"
+        android:layout_below="@id/correo"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/candado"
+        android:drawablePadding="15dp"/>
+
+    <Button
+        android:id="@+id/iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contrasena"
+        android:layout_centerHorizontal="true"
+        android:background="#1fc768"
+        android:text="Ingresar"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/textColor"/>
+
+
+
+</RelativeLayout>

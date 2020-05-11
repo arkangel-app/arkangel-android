@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activitys.notificationSelected"
+    android:background="#E8E8E8">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/textColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#3899D3"
+        android:padding="15dp"
+        android:text="Notificaciones"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/barra"/>
+
+    <TextView
+        android:id="@+id/textTituloActividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"
+        android:layout_below="@+id/notification"
+        android:textStyle="bold"
+        android:layout_marginLeft="20pt"/>
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textTituloActividad"
+        android:text="01/15/20"/>
+
+    <RelativeLayout
+        android:id="@+id/grupo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textTituloActividad"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt">
+
+        <TextView
+            android:id="@+id/emocionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emoción:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/emocion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_toRightOf="@+id/emocionTitle"/>
+
+        <TextView
+            android:id="@+id/OrigenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Origen de la emoción:"
+            android:textStyle="bold"
+            android:layout_below="@id/emocionTitle" />
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emocionTitle"
+            android:layout_toRightOf="@+id/OrigenTitle"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/mensajeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Su mensaje:"
+            android:textStyle="bold"
+            android:layout_below="@id/OrigenTitle"/>
+
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OrigenTitle"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/mensajeTitle"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/grupo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/grupo1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt">
+
+        <TextView
+            android:id="@+id/recomendacionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recomendación"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sugerencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recomendacionTitle"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grupo2"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"
+        android:layout_alignParentRight="true"
+        android:contentDescription="TODO"
+        android:layout_marginRight="20pt"/>
+
+</RelativeLayout>

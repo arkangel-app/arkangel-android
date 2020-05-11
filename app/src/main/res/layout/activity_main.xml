@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arkangel.arkangel.Activitys.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/arkangelnuevo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FFA51B"
+        android:textColor="@color/textColor"
+        android:text="Inicia sesión"
+        android:layout_marginBottom="25dp"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="-25dp"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Crea una cuenta"
+        android:textSize="24dp"
+        android:layout_below="@+id/login"
+        android:background="#8633F6"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/tutor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Soy padre o tutor"
+        android:textSize="24dp"
+        android:layout_below="@+id/register"
+        android:background="#1fc768"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/personajes"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-75dp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>

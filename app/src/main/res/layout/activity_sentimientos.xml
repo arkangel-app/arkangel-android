@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arkangel.arkangel.Activitys.sentimientos">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/textColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/rai_hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/raihola"
+        android:layout_marginLeft="-2dp"
+        android:layout_below="@+id/barra"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/Speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rai_hola"
+        android:layout_marginBottom="50dp"
+        android:layout_toRightOf="@+id/rai_hola"
+        android:background="@drawable/speech_bubble"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="180dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/rai_saludo_texto"
+        android:textColor="@color/textColor"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/ruletaImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        android:src="@drawable/ruletanueva"
+        android:layout_below="@+id/Speech"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/ruletaTextoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ruletagirar"
+        android:paddingBottom="26dp"
+        android:layout_alignLeft="@id/ruletaImg"
+        android:layout_alignRight="@id/ruletaImg"
+        android:layout_alignTop="@id/ruletaImg"
+        android:layout_alignBottom="@id/ruletaImg"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="65dp"
+        android:gravity="center"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GIRAR"
+        android:layout_alignLeft="@id/ruletaTextoImg"
+        android:layout_alignRight="@id/ruletaTextoImg"
+        android:layout_alignTop="@id/ruletaTextoImg"
+        android:layout_alignBottom="@id/ruletaTextoImg"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="#025e75"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtSentimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ruletaImg"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:text="¿Cómo te sientes?"
+        android:textSize="24dp" />
+
+</RelativeLayout>

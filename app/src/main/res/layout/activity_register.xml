@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="25sp"
+                android:src="@drawable/nerd"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp"
+                android:background="#ff9400"
+                android:padding="15dp"
+                android:text="Crea una cuenta"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/usuario"
+                android:drawablePadding="15dp"
+                android:ems="12"
+                android:hint="Tu nombre"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/estrella"
+                    android:drawablePadding="15dp"
+                    android:ems="6"
+                    android:text="Tu sexo:"
+                    android:textColor="#aaa"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/reloj"
+                android:drawablePadding="15dp"
+                android:ems="12"
+                android:hint="Tu edad"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/correo"
+                android:drawablePadding="15dp"
+                android:ems="12"
+                android:hint="Tu correo"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/contrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/candado"
+                android:drawablePadding="15dp"
+                android:ems="12"
+                android:hint="Tu contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/repetir"
+                android:drawablePadding="15dp"
+                android:ems="12"
+                android:hint="Repetir contraseña"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:background="#ff9400"
+                android:text="Siguiente"
+                android:textColor="@color/textColor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

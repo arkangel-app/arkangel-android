@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ResultadoTest">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/textColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/resultadoTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barra"
+        android:layout_centerHorizontal="true"
+        android:background="#8d45b5"
+        android:padding="13dp"
+        android:text="Resultado del test"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultadoTest"
+        android:background="@drawable/codigo_bg"
+        android:padding="13dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_marginTop="20pt"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/personajes"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-75dp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorial">
+
+    <ImageView
+        android:id="@+id/ruletaImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ruletanueva"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/oscuro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#9F000000"
+        android:padding="100dp" />
+
+    <ImageView
+        android:id="@+id/ruletaTextoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ruedatotorial"
+        android:layout_gravity="center"
+        android:layout_marginBottom="13dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GIRAR"
+        android:textSize="24sp"
+        android:textColor="#025e75"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/rai_hola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/raihola"/>
+
+        <TextView
+            android:id="@+id/Speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/speech_bubble"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="250dp"
+            android:paddingStart="40dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/rai_tutorial"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:layout_toRightOf="@+id/rai_hola"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt">
+
+        <ImageView
+            android:id="@+id/tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tocarblanco"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

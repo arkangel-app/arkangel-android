@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+
+    <ImageView
+        android:id="@+id/animo"
+        android:layout_width="15pt"
+        android:layout_height="wrap_content"
+        android:src="@drawable/triste"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="nombre_usuario"
+        android:layout_toRightOf="@+id/animo"
+        android:textStyle="bold"
+        android:paddingStart="15dp"/>
+    <TextView
+        android:id="@+id/suger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="sugerencia"
+        android:layout_toRightOf="@+id/name"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suger"
+        android:layout_marginTop="7dp"
+        android:textSize="14dp"
+        android:text="Fecha"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

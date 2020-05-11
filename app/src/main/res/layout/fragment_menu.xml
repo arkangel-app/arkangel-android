@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.menuFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/textColor"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:visibility="gone"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+    <ImageView
+        android:id="@+id/numPreguntafondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/numpregunta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/barra"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/numPreguntaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numPreguntafondo"
+        android:layout_alignTop="@+id/numPreguntafondo"
+        android:layout_alignRight="@+id/numPreguntafondo"
+        android:layout_alignBottom="@+id/numPreguntafondo"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numPreguntafondo"
+        android:layout_centerHorizontal="true"
+        android:ems="13"
+        android:hint="PREGUNTA"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/codigo_bg"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/calificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pregunta"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/cara5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara5"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara4"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara3"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara2"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara1"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/seleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calificacion"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/desliza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/desliza"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="TODO"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

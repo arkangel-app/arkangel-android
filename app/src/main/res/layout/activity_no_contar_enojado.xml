@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.NoContarEnojado">
+
+    <TextView
+        android:id="@+id/txtSentimientoSeleccionado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7ea5c9"
+        android:padding="10dp"
+        android:text="Me siento enojado."
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtSentimientoSeleccionado"
+        android:layout_alignTop="@id/txtSentimientoSeleccionado"
+        android:layout_alignBottom="@id/txtSentimientoSeleccionado"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:src="@drawable/enojado"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rainocontar"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/rai_img"
+        android:layout_toRightOf="@+id/tap"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="30dp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.test_personalidad">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/textColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/rai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/barra"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:background="#8d45b5"
+        android:padding="13dp"
+        android:text="Test de personalidad"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp"/>
+
+
+    <TextView
+        android:id="@+id/codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:ems="13"
+        android:hint="@string/test"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/codigo_bg"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/calificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/codigo"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/cara5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara5"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara4"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara3"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara2"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/cara1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cara1"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/barraTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/barratest"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/calificacion"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:layout_below="@+id/barraTest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>

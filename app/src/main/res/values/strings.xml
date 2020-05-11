@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Arkangel</string>
+    <string name="rai_img">Imagen Rai</string>
+    <string name="rai_saludo_texto">Hola! Me gustaría saber cómo te sientes el día de hoy.</string>
+    <string name="rai_feliz_texto">Yo también estoy feliz. Porque hoy hice un nuevo truco en la patineta. Y tú qué hiciste?</string>
+    <string name="rai_feliz2_texto">Ahora regístralo en tu diario. Si quieres le puedo contar a tu persona favorita sino sólo te lo guardo aquí.</string>
+    <string name="rai_emergencia_texto">Puedes hablar ahora mismo con un especialista de salud mental.</string>
+    <string name="rai_sicontar2_texto">Te ayudaré a contarle tu problema. ¿Qué le quisieras decir ahora mismo?</string>
+    <string name="rai_contar_texto">¿Quieres contarle a tu persona favorita?</string>
+    <string name="rai_triste_texto">¿Con quién fue el problema?</string>
+    <string name="parentesco_texto">Para usar la app,  tenemos que conectarnos con la persona que más confías. Puede ser mamá, papá, abuelo/a, tía/o, el que tú elijas .</string>
+    <string name="codigo_texto">Ahora pídele que descargue nuestra app . Y que ingrese este código para unirse.</string>
+    <string name="test">Responde las preguntas seleccionando la carita de acuerdo a la sescala.</string>
+    <string name="codigo">Ingresa aquí el código del niño</string>
+    <string name="info_modal">DESBLOQUEA PERSONAJES COMPLETANDO TU TEST DE PERSONALIDAD Y REGISTRANDO EMOCIONES</string>
+    <string name="rai_tutorial">Gira el puntero hasta encontrar tu emoción </string>
+    <string name="description_rai">Ray es un skater. Le gusta hacer amigos. Y es muyoptimista. A veces no le gusta hacer las tareas del colegio pero sus amigos le ayudan a que sea más responsable. </string>
+    <string name="actividadt">Este es un ejercicio para controlar las emociones que resultará muy divertido y placentero.\n
+    - Lo importante es que te mires en él y que sonrías. Aunque no te apetezca, fuerza una sonrisa. Durante unos minutos, puede ser desde 2 a 5, continúa mirándote en el espejo de esta manera.\n
+    - Este ejercicio te ayudará a ser más objetivo con la situación que te ha provocado la emoción que estás sintiendo. También te calmará.\n
+    - Gracias a la sonrisa se liberarán endorfinas, aunque esta esté siendo forzada. Por lo tanto, conseguirás controlar las emociones y obtener una mejor perspectiva sobre la situación.</string>
+    <string name="todo">TODO</string>
+</resources>

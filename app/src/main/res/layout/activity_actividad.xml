@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.actividad">
+
+           <!-- <ImageView
+                android:id="@+id/actividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actividadt" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Busca un espejo"
+                android:layout_below="@id/actividad"
+                android:textColor="#7ea5c9"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:padding="10dp"
+                android:text="@string/actividadt"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/hecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="#1fc768"
+                android:text="HECHO"
+                android:textColor="@color/textColor" />-->
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/actividadImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actividadt"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/textTituloActividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Busca un espejo"
+                android:textColor="#7ea5c9"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textDescripcionActividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/actividadt"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1fc768"
+                android:text="HECHO"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

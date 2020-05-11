@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activitys.feliz">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/textColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/emocion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7ea5c9"
+        android:padding="10dp"
+        android:text="Me siento feliz"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/barra"/>
+
+    <ImageView
+        android:id="@+id/feliz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/emocion"
+        android:layout_alignTop="@id/emocion"
+        android:layout_alignBottom="@id/emocion"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:src="@drawable/feliz"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/gruporaifeliz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emocion"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/raifeliz"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/Speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/speech_bubble"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="200dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/rai_feliz_texto"
+        android:textColor="@color/textColor"
+        android:textSize="16dp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:orientation="horizontal"
+        tools:context=".GridLayoutActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/gruporaifeliz"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/feliz1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="#ff9400"
+            android:text="un nuevo logro"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/feliz2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="#8d45b5"
+            android:text="hice un\nnuevo amigo"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/feliz3"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="#1574ce"
+            android:text="descubrí\nalgo nuevo"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/feliz4"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="#1fc768"
+            android:text="otro"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+    </GridLayout>
+
+</RelativeLayout>
